@@ -1,0 +1,45 @@
+# Rembg Setup and Build Instructions
+
+## 1. Create a Conda Environment
+
+Create a new Conda environment with Python 3.11:
+
+```bash
+conda create -n rembg python=3.11
+conda activate rembg
+```
+2. Install Required Dependencies
+Install the necessary dependencies from requirements.txt:
+```bash
+pip install -r requirements.txt
+```
+3. Run the Script Locally
+Run the main Python script using the following command:
+```bash
+python main.py --input input.png --output output.png
+```
+Make sure to replace input.png and output.png with your desired input and output file paths.
+
+Build Executable using auto-py-to-exe
+1. Install auto-py-to-exe
+If you haven't already, install auto-py-to-exe:
+
+pip install auto-py-to-exe
+2. Configure auto-py-to-exe
+Open auto-py-to-exe by running auto-py-to-exe in your terminal.
+Select main.py as your script.
+Add requirements.txt and any other additional files if needed.
+Choose the desired settings for your executable (e.g., one-file or directory).
+3. Build the Executable
+Click on the Build button in the auto-py-to-exe interface to compile your script into an executable.
+
+Running the Executable
+1. Navigate to the Build Directory
+After building the executable, navigate to the output directory where the .exe file is located. For example:
+
+cd rembg\output\main
+2. Run the Executable
+Run the executable using the following command:
+
+script_name.exe input_image.jpg output_image.png
+Make sure to replace input_image.jpg and output_image.png with your actual input and output paths.

@@ -1,0 +1,33 @@
+# Ignore the output directory and its contents
+output/
+output/main/_internal/
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore virtual environment directories
+env/
+venv/
+conda/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore configuration files
+*.ini
+*.env
+
+# Ignore test results
+*.tox
+*.coverage
+
+# Ignore auto-py-to-exe output directories
+dist/
+build/
+*.spec
